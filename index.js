@@ -49,7 +49,7 @@ if(document.URL.includes("watchlist.html") ) {
 }
 submitBtn.addEventListener('click', function(){
     if(inputText.value){
-        fetch(`http://www.omdbapi.com/?t=${inputText.value}&apikey=968921e9`)
+        fetch(`https://www.omdbapi.com/?t=${inputText.value}&apikey=968921e9`)
             .then(res => res.json())
             .then(data => {
                 movieObject = {
